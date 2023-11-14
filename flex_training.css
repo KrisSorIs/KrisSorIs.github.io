@@ -1,0 +1,36 @@
+/*HEADER*/
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.header-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo-img{
+    margin-right: 40px;
+}
+
+.header-menu{
+    flex-grow: 3;
+}
+
+.cards-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
