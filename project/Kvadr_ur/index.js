@@ -36,4 +36,6 @@ function onClear() {
     let input2 = Number(document.getElementById('input2').value = '');
     let input3 = Number(document.getElementById('input3').value = ''); 
     document.getElementById("korni").innerHTML = "";
+    document.getElementById("X1").innerHTML = "";
+    document.getElementById("X2").innerHTML = "";
 }
