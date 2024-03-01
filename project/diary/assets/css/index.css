@@ -1,0 +1,170 @@
+body {
+    background-color: rgb(228, 163, 206);
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    text-decoration: none;
+    }
+li {
+    list-style-type: none; 
+    font-size: 35px;   
+    }
+li.li1 {
+    list-style-type: none; 
+    font-size: 40px;   
+    }
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    h2{
+        font-size: 45px;
+    }
+    p{
+        font-size: 45px;
+    }
+    div{
+        background-color: white;
+    }
+    a {
+        text-decoration:none;
+        display: inline-block;
+        width: 100%;
+        margin-right: 0.625%;
+        color:rgb(143, 12, 143);
+    }
+    a:hover{
+        background: rgb(143, 12, 143);
+        color: white;
+        font-size: 45px;
+    }
+    /*a.text:visited{
+        color:rgb(143, 12, 143);
+        background: rgb(109, 9, 109);
+    }*/
+    a.ssylki{
+        font-size: 30px;
+        background: rgb(196, 100, 100);
+        color: white;
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki:hover{
+        font-size: 30px;
+        background: white;
+        color: rgb(196, 100, 100);
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki2{
+        font-size: 30px;
+        background: rgb(231, 177, 76);
+        color: white;
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki2:hover{
+        font-size: 30px;
+        background: white;
+        color: rgb(231, 177, 76);
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki3{
+        font-size: 30px;
+        background: rgb(204, 202, 88);
+        color: white;
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki3:hover{
+        font-size: 30px;
+        background: white;
+        color: rgb(204, 202, 88);
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki4{
+        font-size: 30px;
+        background:  rgb(49, 196, 93);
+        color: white;
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki4:hover{
+        font-size: 30px;
+        background: white;
+        color: rgb(49, 196, 93);
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    
+    a.ssylki5{
+        font-size: 30px;
+        background:#5bcca6;
+        color: white;
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki5:hover{
+        font-size: 30px;
+        background: white;
+        color: #5bcca6;
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki6{
+        font-size: 30px;
+        background:rgb(91, 135, 185);
+        color: white;
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki6:hover{
+        font-size: 30px;
+        background: white;
+        color: rgb(91, 135, 185);
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki7{
+        font-size: 30px;
+        background:rgb(160, 123, 194);
+        color: white;
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }
+    a.ssylki7:hover{
+        font-size: 30px;
+        background: white;
+        color: rgb(160, 123, 194);
+        text-decoration:none;
+        display: inline-block;
+        width: 30%;
+        margin-right: 0.625%;
+    }

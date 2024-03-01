@@ -1,0 +1,106 @@
+
+body{
+    background-color: #222222;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', sans-serif;
+    
+}
+
+h1{
+    font-size: 500%;
+}
+
+div.n2{
+    padding: 6%;
+    padding-left: 12%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    background-image: url(img/Vector3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding-bottom: 2%;
+
+    
+}
+
+img.i1{
+    position: absolute;
+    left: 58%;
+    top: 45%;
+}
+
+div.about{
+    background-color: #222222;
+    background-image: url(img/Vector.svg);
+    background-repeat: no-repeat;
+    padding: 12%;
+    background-size: 55% 95%;
+    background-position-x: 10px;
+    background-position-y: 15px;
+}
+h1.about{
+    color: #222222;
+}
+
+li{
+    color: #222222;
+    font-size: 27px;
+    padding: 1%;
+}
+
+div.projects{
+    background-color: #222222;
+    background-image: url(img/Vector2.svg);
+    background-repeat: no-repeat;
+    padding: 12%;
+    padding-top: 8%;
+    background-size: 50% 100%;
+    background-position-x: 600px;
+    background-position-y: 0px;
+}
+h1.projects{
+    padding-left: 58%;
+    color: #222222;
+    position: 1000px;
+}
+div.projects2{
+    font-size: 27px;
+    /* padding: 5%; */
+    padding-left: 58%;
+    text-align: left;
+}
+
+a{
+    position: absolute;
+    text-decoration: none;
+}
+a:link{
+    color: #222222;
+}
+a:visited{
+    color: #3d3d3d;
+}
+a:hover{
+    font-size: 120%;
+}
+/* a:active{
+    
+} */
+.typing {
+    width: 900px;
+    overflow: hidden; /* перекрытие */
+    white-space: nowrap; /* подстраивается под длину строки*/
+    border-right: 2px solid #ffffff; /*курсор*/
+    animation: typing 2s;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+/*ПЕЧАТЬ ПОСТРОЧНО НУЖНА!!!!!!!*/
+
+
+
