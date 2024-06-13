@@ -199,6 +199,12 @@ img{
     width: 70%;
 }
 
+.t11{
+  font-family: 'Cormorant Garamond';
+  padding-top: 10px;
+  color: rgb(53, 52, 52);
+  font-size: 50px;
+}
 .t1{
     font-family: 'Cormorant Garamond';
     padding-top: 20px;
@@ -206,6 +212,7 @@ img{
     text-align: center; 
     margin-top: 60px;
     text-transform: uppercase;
+    
 }
 
 h1.t1{
@@ -281,3 +288,26 @@ section#partners .partners-label{
   transition: .5s ease-in-out;
 }
    */
+
+   form.form-example {
+    display: table;
+  }
+  
+  div.form-example {
+    display: table-row;
+  }
+  
+  label,
+  input {
+    display: table-cell;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    padding-right: 10px;
+  }
+  .form{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
