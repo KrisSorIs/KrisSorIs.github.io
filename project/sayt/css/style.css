@@ -311,3 +311,27 @@ section#partners .partners-label{
     text-align: center;
     align-items: center;
   }
+
+  .mk{
+    display: flex;
+    flex-direction: row;
+  }
+
+  img.mkk{
+    width: 300px;
+    margin: 50px;
+  }
+
+  .tt{
+    margin-top: 90px;
+    
+  }
+
+  h3{
+    font-family: 'Cormorant Garamond';
+    font-size: 40px;
+  }
+
+  p.mkl{
+    font-size: 25px;
+  }
