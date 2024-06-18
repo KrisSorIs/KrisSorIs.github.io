@@ -68,6 +68,9 @@ body{
   font-style: italic;
 }
 
+.logo{
+  width: 60px;
+}
 /* .cormorant-garamond-light {
     font-family: "Cormorant Garamond", serif;
     font-weight: 300;
@@ -310,7 +313,14 @@ section#partners .partners-label{
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-left: 400px;
+    margin-top: 30px;
+    font-size: 20px;
   }
+
+/* .buttom{
+  margin-left: 500px;
+} */
 
   .mk{
     display: flex;
@@ -375,14 +385,41 @@ section#partners .partners-label{
     text-align: right;
     /* margin-left: 30px; */
     margin-right: 70px;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 20px 20px 20px white;
+    box-shadow: -10px -10px 20px white;
+    border-radius: 0px;
   }
 
   .ww-block-left{
     width: 500px;
     text-align: left;
     margin-left: 70px;
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
     /* margin-right: 30px; */
+    box-shadow: 10px -10px 20px white;
+    border-radius: 0px;
+  }
+
+  .ww-block-center{
+    width: 500px;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin-right: 30px; */
+    box-shadow: 0px 0px 20px white;
+    border-radius: 0px;
+  }
+  .ww1-c{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 320px;
   }
 /* .n1{
   margin-right: 80px;
