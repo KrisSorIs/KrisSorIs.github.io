@@ -15,7 +15,9 @@
 
 </head>
 <body style="font-family: 'Cormorant Garamond'">
-    <section id="menu" style="position: fixed; width: 100%; z-index: 110;" class="container" >
+  
+
+  <section id="menu" style="position: fixed; width: 100%; z-index: 110;" class="container" >
         <nav class="navbar navbar-expand-lg bg-light " data-bs-theme="light">
             <div class="container-fluid">
               <!-- <a class="navbar-brand" href="#">Navbar</a>
@@ -38,16 +40,19 @@
                     <a class="nav-link" href="#d2">О нас</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#d1">Почему мы?</a>
+                    <a class="nav-link" href="#d3">Мастер-классы</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#d1">Команда</a>
+                    <a class="nav-link" href="#d4">Почему мы?</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#d1">Мастер-классы</a>
+                    <a class="nav-link" href="#d5">Команда</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#d1">Отзывы</a>
+                    <a class="nav-link" href="#d6">Отзывы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-primary t1 b1 fw-semibold" style="margin: 0; text-transform: none; padding-bottom: 6px; padding-top: 8px; " href="#d-push">Оставить заявку</a>
                   </li>
                 </ul>
                 <!-- <form class="d-flex">
@@ -58,19 +63,23 @@
             </div>
           </nav>
     </section>
+
+  
     <section class="container major-desktop " style="font-family: 'Cormorant Garamond'" id="d1">
         <div class="text-1 style="font-family: 'Cormorant Garamond'"">
             <h1 class="t11" style="font-family: 'Cormorant Garamond';">ВЫПЛЕСНИ ЭМОЦИИ ВМЕСТЕ С КРАСКАМИ</h1>
             <h3 class="t11" style="font-size: 35px;">Творчество для каждого</h3>
             <div class="botton t11">
-                <a style="font-size: 20px; padding-top: 5px; border-radius: 0; text-transform: none;" class="btn btn-primary t1 b1 fw-semibold" href="#">Хочу к вам!</a>
+                <a style="font-size: 20px; padding-top: 5px; border-radius: 0; text-transform: none;" class="btn btn-primary t1 b1 fw-semibold" href="#d-push">Хочу к вам!</a>
             </div>
         </div>
         <div class="img-1">
             <img src="img/img-1.jpg" alt="">
         </div>
     </section>
-    <section class="about-us container" id="d2">
+
+
+    <section class="about-us container" style="padding-top: 50px;" id="d2">
       <h1 class="bl2 t1 text-uppercase" style="text-align: center; margin-top: 60px;">о нас</h1>
       <div class="d2">
         <div class="img2">
@@ -106,14 +115,12 @@
         </div>
       </div>
     </section>
-    <section class="container master-class" id="d3">
-      <div class="d3t">
-        <h1 class="t1 upper-case">Мастер-классы</h1>
 
-      </div>
-    </section>
+<section class="master-class container"  style="padding-top: 50px;" id="d3">
+  <div class="d3t">
+    <h1 class="t1 upper-case">Мастер-классы</h1>
 
-<section class="master-class container">
+  </div>
   <div class="mk">
     <div class="ph">
       <img class="mkk" src="img/kvilling.jpg" alt="Квилинг">
@@ -214,36 +221,65 @@
         Вязание
       </h3>
       <p class="mkl">
-        процесс изготовления полотна или изделий из одной или нескольких нитей путём изгибания их в петли и пе­ре­пле­тания петель друг с другом с помощью несложных инструментов — вручную или на вязальной машине.
+        процесс изготовления полотна или изделий из одной или нескольких нитей путём изгибания их в петли и пе­ре­пле­тания петель друг с другом с помощью несложных инструментов — крючка или спиц.
       </p>
     </div>
   </div>
 </section>
 
 
- <section class="container formm">
+ <section class="container formm" id="d-push"  style="padding-top: 50px;">
   <div class="text-form">
     <h1 class="bl-form t1 text-uppercase " style="text-align: center; margin-top: 60px; ">Хочу на мастер-класс!</h1>
   </div>
   <div class="form">
-    <form action="" method="get" class="form-example">
+    <div class="form-example">
       <div class="form-example">
         <label for="name">Ваше имя</label>
-        <input type="text" name="name" id="name" placeholder="Иван" required />
+        <input type="text" name="Name" id="name" placeholder="Иван" required />
       </div>
       <div class="form-example">
         <label for="phone">Ваш номер </label>
-        <input type="tel" name="tel" id="tel" pattern="[0-9]{11}" placeholder="89108947564"  required />
+        <input type="tel" name="Phone" id="tel" pattern="[0-9]{11}" placeholder="89108947564"  required />
       </div>
       <div class="form-example">
-        <input type="submit" value="Позвоните мне!" />
+        
+        <!-- <button id="push" value="Позвоните мне!"  /> -->
+      <script>
+    var options = { 
+  method: 'get',
+
+  headers: {
+    'Content-Type': 'application/json',
+      'accept': '*/*',
+      'Content-Encoding': 'utf-8',
+      'Charset': 'utf-8',
+  },
+
+};
+async function AddOrder()
+  {
+    
+    let Name = document.getElementById('name').value;
+    let Phone = document.getElementById('tel').value;
+    if(Name!="" && Phone!="" && Phone.length==11){
+      await fetch('http://192.168.238.54:5013/AddOrder?name='+ Name+'&phone=' + Phone, options);
+      alert('Спасибо за заявку! Наш менеджер свяжется с вами в течение 10 часов!');
+    }
+    else{
+      alert('Поля не заполнены! Пожалуйста, заполните поле имени и номера телефона!')
+    }
+  }
+    
+    </script>
       </div>
-    </form>
+      <button class="button-push btn btn-primary t1 b1 fw-semibold" onclick="AddOrder()" >Хочу на мастер-класс!</button>
+    </div>
     
   </div>
 </section>
 
-<section class="container why-we">
+<section class="container why-we"  style="padding-top: 50px;" id="d4">
   <div class="why-we-all">
     <div class="text-why-we">
       <h1 class="t1">Почему мы?</h1>
@@ -318,6 +354,64 @@
   </div>
 </section>
 
+<section class="container formm" id="d-push2"  style="padding-top: 50px;">
+  <div class="text-form">
+    <h1 class="bl-form t1 text-uppercase " style="text-align: center; margin-top: 60px; ">Остались вопросы?</h1>
+    <p class="questions">
+      Оставьте заявку, и мы свяжемся с вами в течение 10 часов!
+    </p>
+  </div>
+  <div class="form">
+    <div class="form-example">
+      <div class="form-example">
+        <label for="name">Ваше имя</label>
+        <input type="text" name="Name" id="name" placeholder="Иван" required />
+      </div>
+      <div class="form-example">
+        <label for="phone">Ваш номер </label>
+        <input type="tel" name="Phone" id="tel" pattern="[0-9]{11}" placeholder="89108947564"  required />
+      </div>
+      <div class="form-example">
+        
+        <!-- <button id="push" value="Позвоните мне!"  /> -->
+      <script>
+    var options = { 
+  method: 'get',
+
+  headers: {
+    'Content-Type': 'application/json',
+      'accept': '*/*',
+      'Content-Encoding': 'utf-8',
+      'Charset': 'utf-8',
+  },
+
+};
+async function AddOrder()
+  {
+    
+    let Name = document.getElementById('name').value;
+    let Phone = document.getElementById('tel').value;
+    if(Name!="" && Phone!="" && Phone.length==11){
+      await fetch('http://192.168.238.54:5013/AddOrder?name='+ Name+'&phone=' + Phone, options);
+      alert('Спасибо за заявку! Наш менеджер свяжется с вами в течение 10 часов!');
+    }
+    else{
+      alert('Поля не заполнены! Пожалуйста, заполните поле имени и номера телефона!')
+    }
+  }
+    
+    </script>
+      </div>
+      <button class="button-push btn btn-primary t1 b1 fw-semibold" onclick="AddOrder()" >Позвоните мне!</button>
+    </div>
+    
+  </div>
+  <div class="soc-seti">
+    <img src="img/VKK.svg" alt="" class="SS">
+    <img src="img/WA.svg" alt="" class="SS">
+    <img src="img/Gmail.svg" alt="" class="SS">
+  </div>
+</section>
 
 
 </body>
