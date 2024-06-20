@@ -217,6 +217,22 @@ body{
     width: 50%;
     justify-content: center;
     align-items: center;
+    animation-name: puls;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes puls{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+    
+  }
 }
 img{
     width: 70%;
@@ -270,8 +286,23 @@ a{
   width: 400px;
   padding: 20px;
   margin: 0px;
+  animation-name: puls2;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-
+@keyframes puls2{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+    
+  }
+}
 .t2{
   font-size: 28px;
   text-align: right;
@@ -520,6 +551,7 @@ section.masters{
   box-shadow: 20px 20px 20px #66a593;
   margin-top: 50px;
 }
+
 h3.masters{
   font-family: 'Cormorant Garamond';
   font-size: 45px;
@@ -596,3 +628,51 @@ img.otzyv{
   /* margin: 20px; */
 }
 
+.footer{
+  padding-top: 20px;
+  background-color: #B8E3D8;
+}
+footer{
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+}
+img.logo-foot{
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+.t-1,.t-2,.t-3{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: left;
+  align-items: flex-start;
+  justify-items: left;
+}
+.f-bold{
+  font-weight: 1000;
+  margin: 0;
+  padding: 0;
+}
+.foot{
+  color: #353433;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+}
+a.foot{
+  margin: 0;
+  padding: 0;
+}
+a.foot:hover{
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  color:#d7faf2;
+}
+
+.img-1{}
