@@ -377,10 +377,9 @@ section#partners .partners-label{
     display: flex;
     flex-direction: row;
     transition: background-color 250ms ease-in-out;
-  
-  }
+    }
   .mk:hover{
-    background-color: beige;
+    background-color: rgb(247, 239, 239);
     box-shadow: 20px 20px 20px #66a593;
   }
 
