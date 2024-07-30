@@ -248,20 +248,20 @@
         
         <!-- <button id="push" value="Позвоните мне!"  /> -->
       <script>
-    var options = { 
-  method: 'get',
-
-  headers: {
-    'Content-Type': 'application/json',
-      'accept': '*/*',
-      'Content-Encoding': 'utf-8',
-      'Charset': 'utf-8',
-  },
-
-};
-async function AddOrder()
-  {
-    
+        async function AddOrder()
+        {
+          var options = { 
+        method: 'get',
+      
+        headers: {
+          'Content-Type': 'application/json',
+            'accept': '*/*',
+            'Content-Encoding': 'utf-8',
+            'Charset': 'utf-8',
+        },
+      
+      };
+          
     let Name = document.getElementById('name').value;
     let Phone = document.getElementById('tel').value;
     if(Name!="" && Phone!="" && Phone.length==11){
